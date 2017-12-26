@@ -1,0 +1,4 @@
+使用vs2008也可运行
+
+数据库：SQL Server 2005 或者Access
+连接方式为：ADO

@@ -1,0 +1,64 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 源程序 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP8.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/gunterLBMS.pdb" /debug /machine:I386 /out:"Debug/gunterLBMS.exe" /pdbtype:sept 
+".\Debug\DBSlider.obj"
+".\Debug\Dlg.obj"
+".\Debug\Dlogin.obj"
+".\Debug\DUser.obj"
+".\Debug\Duty.obj"
+".\Debug\IDD_books.obj"
+".\Debug\Main.obj"
+".\Debug\opbooks.obj"
+".\Debug\outin.obj"
+".\Debug\RainFunction.obj"
+".\Debug\RecordComboBox.obj"
+".\Debug\RecordEditBox.obj"
+".\Debug\RecordList.obj"
+".\Debug\RxButton.obj"
+".\Debug\StdAfx.obj"
+".\Debug\usersrights.obj"
+".\Debug\源程序.obj"
+".\Debug\gunterLBMS.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP8.tmp"
+<h3>Output Window</h3>
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP9.tmp" with contents
+[
+/nologo /o"Debug/gunterLBMS.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\DBSlider.sbr"
+".\Debug\Dlg.sbr"
+".\Debug\Dlogin.sbr"
+".\Debug\DUser.sbr"
+".\Debug\Duty.sbr"
+".\Debug\IDD_books.sbr"
+".\Debug\Main.sbr"
+".\Debug\opbooks.sbr"
+".\Debug\outin.sbr"
+".\Debug\RainFunction.sbr"
+".\Debug\RecordComboBox.sbr"
+".\Debug\RecordEditBox.sbr"
+".\Debug\RecordList.sbr"
+".\Debug\RxButton.sbr"
+".\Debug\usersrights.sbr"
+".\Debug\源程序.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP9.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+gunterLBMS.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,357 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\gunterLBMS.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MY_DIALOG DIALOGEX 0, 0, 374, 225
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "张强强之C++之简易图书信息管理系统   V1.0  beta版"
+FONT 8, "宋体"
+BEGIN
+    CONTROL         "系统设置",IDC_ButClime,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,7,74,56,16,WS_EX_TRANSPARENT
+    CONTROL         "图书馆公告",IDC_ButSort,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,5,92,57,16,WS_EX_TRANSPARENT
+    CONTROL         "管理人员",IDC_ButDuty,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,5,113,57,16,WS_EX_TRANSPARENT
+    CONTROL         "个人图书管理",IDC_ButUnit,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,5,134,57,16,WS_EX_TRANSPARENT
+    CONTROL         "读者权限分配",IDC_ButMessage,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,5,155,57,16,WS_EX_TRANSPARENT
+    CONTROL         "图书借阅信息",IDC_ButCG,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,5,176,57,16,WS_EX_TRANSPARENT
+    CONTROL         "用户管理",IDC_ButOP,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    6,197,57,16,WS_EX_TRANSPARENT
+    CONTROL         223,IDC_STATIC,"Static",SS_BITMAP,7,1,360,71
+END
+
+IDD_DIADuty DIALOG DISCARDABLE  0, 0, 320, 149
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户权限管理"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "添加(&A)",IDC_BUTADD,89,119,35,17
+    EDITTEXT        IDC_EDTName,142,56,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDTLetterName,142,76,162,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    COMBOBOX        IDC_ComDuty,142,96,162,57,CBS_DROPDOWN | CBS_SORT | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "保存(&S)",IDC_BUTSave,197,119,35,17,WS_DISABLED
+    PUSHBUTTON      "修改(&C)",IDC_BUTChange,125,119,35,17
+    PUSHBUTTON      "删除(&D)",IDC_BUTDELETE,161,119,35,17
+    PUSHBUTTON      "撤消(&U)",IDC_BUTUnDo,233,119,35,17,WS_DISABLED
+    PUSHBUTTON      "退出(&E)",IDC_BUTEXIT,269,119,35,17
+    LTEXT           "编号",IDC_STATIC,90,42,42,10
+    LTEXT           "类别",IDC_STATIC,90,61,42,10
+    LTEXT           "最多借出",IDC_STATIC,90,79,42,10
+    LTEXT           "最长月数",IDC_STATIC,90,98,42,10
+    LTEXT           "ID",IDC_STAID,142,42,77,8
+    LISTBOX         IDC_LIST2,12,11,70,124,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,6,306,136
+    CTEXT           "用户权限管理",IDC_STATIC,142,17,153,15,SS_CENTERIMAGE | 
+                    WS_BORDER
+END
+
+IDD_DIALogin DIALOG DISCARDABLE  0, 0, 187, 91
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "系统登录"
+FONT 9, "宋体"
+BEGIN
+    COMBOBOX        IDC_COMName,58,19,111,59,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDTPassWard,57,37,112,13,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "登录",IDC_BUTLogin,59,60,52,16
+    PUSHBUTTON      "退出",IDC_BUTEXIT,117,60,52,16
+    LTEXT           "用户名：",IDC_STATIC,23,21,32,8
+    LTEXT           "密  码：",IDC_STATIC,23,39,32,8
+END
+
+IDD_DIAAddUser DIALOG DISCARDABLE  0, 0, 320, 149
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户管理"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDTName,143,56,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDTPassWard,143,76,162,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDTAffarmPassward,143,96,162,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "保存",IDC_BUTSave,197,119,35,17,WS_DISABLED
+    PUSHBUTTON      "添加",IDC_BUTADD,89,119,35,17
+    PUSHBUTTON      "修改",IDC_BUTChange,125,119,35,17
+    PUSHBUTTON      "删除",IDC_BUTDELETE,161,119,35,17
+    PUSHBUTTON      "撤消",IDC_BUTUnDo,233,119,35,17,WS_DISABLED
+    PUSHBUTTON      "退出",IDC_BUTEXIT,269,119,35,17
+    LTEXT           "编    号：",IDC_STATIC,90,42,42,10
+    LTEXT           "用 户 名：",IDC_STATIC,90,61,42,10
+    LTEXT           "密    码：",IDC_STATIC,90,79,42,10
+    LTEXT           "确认密码：",IDC_STATIC,90,98,42,10
+    LTEXT           "",IDC_STAID,142,42,77,8
+    LISTBOX         IDC_LIST,12,11,70,124,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,6,306,136
+    CONTROL         200,IDC_STATIC,"Static",SS_BITMAP,90,11,215,25
+END
+
+IDD_OpBooks DIALOG DISCARDABLE  0, 0, 280, 167
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "操作图书"
+FONT 10, "System"
+BEGIN
+    LISTBOX         IDC_LIST4,7,9,254,47,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "所有图书信息↓",IDC_STATIC,117,1,68,8
+    LTEXT           "BookID",IDC_STATIC,25,68,23,8
+    LTEXT           "书名",IDC_STATIC,30,77,19,8
+    LTEXT           "ISBN",IDC_STATIC,163,62,19,8
+    LTEXT           "作者",IDC_STATIC,161,77,21,8
+    LTEXT           "出版社",IDC_STATIC,22,89,25,8
+    LTEXT           "出版日期",IDC_STATIC,150,92,36,8
+    LTEXT           "类 别",IDC_STATIC,23,107,23,8
+    LTEXT           "固定价格",IDC_STATIC,149,106,32,8
+    LTEXT           "图书状态",IDC_STATIC,7,120,34,8
+    LTEXT           "续借否",IDC_STATIC,154,119,25,8
+    EDITTEXT        IDC_EDIT1,55,64,91,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,55,77,91,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,54,91,92,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,54,106,91,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,53,120,93,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,187,61,74,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,188,76,73,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,186,89,74,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,185,103,73,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,185,116,73,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "增加",IDC_BUTADD,26,135,39,12
+    PUSHBUTTON      "修 改",IDC_BUTupdate,87,136,39,12
+    PUSHBUTTON      "删 除",IDC_BUTdelete1,151,135,39,12
+    PUSHBUTTON      "退 出",IDC_BUTExit1,211,132,39,12
+END
+
+IDD_Usersrights DIALOG DISCARDABLE  0, 0, 241, 113
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户权限----类型分配"
+FONT 10, "System"
+BEGIN
+    LTEXT           "读者类别",IDC_STATIC,78,16,33,8
+    LTEXT           "一次借阅",IDC_STATIC,77,29,33,8
+    LTEXT           "借阅月数",IDC_STATIC,76,48,33,8
+    EDITTEXT        IDC_EDIT1,120,13,104,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,121,28,103,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,121,46,103,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_BUTADD,62,80,31,14
+    LISTBOX         IDC_LIST,9,9,53,93,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "修改",IDC_BUTupdate,93,80,31,14
+    PUSHBUTTON      "删除",IDC_BUTDEL,128,80,31,14
+    PUSHBUTTON      "保存",IDC_BUTStore,163,79,31,14
+    PUSHBUTTON      "退出",IDC_BUTexit2,199,77,28,15
+END
+
+IDD_outin DIALOG DISCARDABLE  0, 0, 281, 169
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图书借阅---图书借入借出信息"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "修 改",IDOK,85,142,31,14
+    PUSHBUTTON      "图书入库",IDdel,34,140,35,14
+    PUSHBUTTON      "退 出",IDC_BUTEXIT,181,140,31,14
+    LISTBOX         IDC_LIST2,16,24,244,57,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "图书借阅信息↓",IDC_STATIC,115,13,67,8
+    PUSHBUTTON      "删 除",IDdel2,130,141,32,14
+    LTEXT           "借书证号",IDC_STATIC,18,84,33,8
+    EDITTEXT        IDC_EDIT1,56,83,73,14,ES_AUTOHSCROLL
+    LTEXT           "借出时间",IDC_STATIC,141,83,33,8
+    EDITTEXT        IDC_EDIT2,178,82,81,14,ES_AUTOHSCROLL
+    LTEXT           "图书编号",IDC_STATIC,19,99,33,8
+    EDITTEXT        IDC_EDIT3,56,98,73,14,ES_AUTOHSCROLL
+    LTEXT           "应归还时间",IDC_STATIC,136,99,41,8
+    EDITTEXT        IDC_EDIT4,178,98,80,14,ES_AUTOHSCROLL
+    LTEXT           "是否归还",IDC_STATIC,18,116,33,8
+    EDITTEXT        IDC_EDIT5,55,115,74,14,ES_AUTOHSCROLL
+    LTEXT           "超期天数",IDC_STATIC,140,117,33,8
+    EDITTEXT        IDC_EDIT6,178,113,80,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_MY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_DIADuty, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        VERTGUIDE, 90
+        VERTGUIDE, 142
+        VERTGUIDE, 304
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_DIALogin, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_DIAAddUser, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_OpBooks, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_Usersrights, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_outin, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BUT_NOMAL           BITMAP  MOVEABLE PURE   "BMP\\NONAL.bmp"
+IDB_BUT_DOWN            BITMAP  MOVEABLE PURE   "BMP\\DOWN.bmp"
+IDB_USER                BITMAP  MOVEABLE PURE   "BMP\\User.bmp"
+IDB_BITMAP2             BITMAP  MOVEABLE PURE   "BMP\\gcxy.bmp"
+IDB_BITMAP4             BITMAP  MOVEABLE PURE   "gunterLBMS.BMP"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "icon4.ico"
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\gunterLBMS.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

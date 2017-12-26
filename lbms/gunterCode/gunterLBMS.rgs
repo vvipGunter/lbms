@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{CB720065-5988-11D8-8750-5254AB32C8FB} = s '源程序'
+		'源程序.EXE'
+		{
+			val AppID = s {CB720065-5988-11D8-8750-5254AB32C8FB}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+
+	// gunterLBMS.idl : IDL source for gunterLBMS.exe
+//
+// This file will be processed by the MIDL tool to
+// produce the type library (gunterLBMS.tlb) and marshalling code.
+import "oaidl.idl";
+import "ocidl.idl";
+[
+	uuid(CB720064-5988-11D8-8750-5254AB32C8FB),
+	version(1.0),
+	helpstring("Ô´³ÌÐò 1.0 Type Library")
+]
+library MyLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+};
+
+	
